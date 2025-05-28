@@ -1,0 +1,66 @@
+
+        /* Animation classes */
+        .column-enter {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .column-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 300ms ease;
+        }
+        .column-exit {
+            opacity: 1;
+        }
+        .column-exit-active {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 300ms ease;
+        }
+        
+        .task-enter {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        .task-enter-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: all 200ms ease;
+        }
+        .task-exit {
+            opacity: 1;
+        }
+        .task-exit-active {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 200ms ease;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+        
+        /* Priority indicators */
+        .priority-low { border-left: 4px solid #10B981; }
+        .priority-medium { border-left: 4px solid #F59E0B; }
+        .priority-high { border-left: 4px solid #EF4444; }
+        
+        /* Tag colors */
+        .tag-design { background-color: #E9D5FF; color: #6B21A8; }
+        .tag-dev { background-color: #BFDBFE; color: #1E40AF; }
+        .tag-bug { background-color: #FECACA; color: #B91C1C; }
+        .tag-feature { background-color: #A7F3D0; color: #065F46; }
+        .tag-documentation { background-color: #FDE68A; color: #92400E; }
